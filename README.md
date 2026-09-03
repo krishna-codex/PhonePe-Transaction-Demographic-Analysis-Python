@@ -1,140 +1,195 @@
 # 📱 PhonePe Transaction & Demographic Analysis — Python
 
-> End-to-end Python analysis of PhonePe transaction, user, device, and demographic data across Indian states and districts.
+> End-to-end Python analysis of PhonePe transaction, user, device, and demographic data across Indian states and districts to identify transaction trends, user behavior, device patterns, and demographic relationships.
 
 ---
 
 ## 📌 Project Overview
 
-This project analyzes PhonePe transaction and user data to uncover patterns in transaction activity, user behavior, device usage, and demographic characteristics across Indian states and districts.
+This project analyzes PhonePe transaction and demographic data using Python to understand digital payment trends across India.
 
-The analysis combines multiple datasets from the supplied PhonePe workbook and uses Python for data loading, cleaning, transformation, exploratory analysis, visualization, data-quality validation, and insight generation.
+The analysis covers transaction volumes, transaction values, registered users, device usage, app engagement, and demographic relationships at both state and district levels.
+
+The project also includes data cleaning, exploratory data analysis, visualization, correlation analysis, and business recommendations.
 
 ---
 
 ## 🎯 Business Objectives
 
-The analysis focuses on:
-
-- Understanding transaction trends across states and districts
-- Analyzing transaction value and transaction volume
-- Examining user behavior and app engagement
-- Understanding device usage patterns
-- Exploring demographic relationships with transaction activity
-- Identifying data-quality gaps through reconciliation checks
-- Generating actionable business recommendations
+- Analyze transaction trends across Indian states and districts.
+- Identify states and regions with high transaction activity.
+- Understand registered users and device usage patterns.
+- Study the relationship between population demographics and transaction volume.
+- Identify data quality and reconciliation gaps.
+- Generate actionable insights for digital-payment adoption and engagement.
 
 ---
 
 ## 📂 Dataset
 
-The project uses data from the following areas:
+The project uses multiple datasets containing transaction, user, device, and demographic information.
 
-- State-level transaction and user data
-- State-level transaction split data
-- State-level device data
-- District-level transaction and user data
-- District demographic data
+### Excel Sheets Used
 
-The notebook loads these datasets directly from the PhonePe Excel workbook.
+- `State_Txn and Users`
+- `State_TxnSplit`
+- `State_DeviceData`
+- `District_Txn and Users`
+- `District Demographics`
 
----
-
-## 🧹 Data Preparation & Cleaning
-
-Key preparation steps included:
-
-- Loading multiple Excel sheets using Pandas
-- Standardizing column names
-- Inspecting dataset structure and data types
-- Checking for missing values
-- Preparing data for state- and district-level analysis
-- Aggregating transaction and user metrics
-- Creating derived analytical metrics
-- Reconciling district-level data with state-level data to identify data-quality gaps
+A district-to-state mapping CSV is included to support geographical analysis.
 
 ---
 
-## 📊 Analysis Performed
+## 🧹 Data Preparation
 
-### 1. Transaction Trend Analysis
+The analysis includes:
 
-Analyzed transaction volume and transaction value across states and over time to identify high-activity markets and changes in transaction behavior.
-
-### 2. User & App Engagement Analysis
-
-Examined registered users and app opens alongside transaction metrics to understand engagement and monetization patterns.
-
-### 3. Device Usage Analysis
-
-Analyzed device-related data to understand patterns in PhonePe usage across states.
-
-### 4. Demographic Analysis
-
-Explored relationships between district demographics and transaction activity, including population density and transaction volume.
-
-### 5. Data Quality & Reconciliation
-
-Performed district-to-state reconciliation checks to identify differences between aggregated district data and state-level reporting.
-
-### 6. Business Insight Generation
-
-Converted analytical findings into recommendations related to digital-payment infrastructure, localized campaigns, user engagement, and reporting quality.
+- Loading data from Excel and CSV files using Pandas.
+- Standardizing column names.
+- Removing unnecessary spaces from column names.
+- Checking data consistency.
+- Preparing datasets for state-level and district-level analysis.
+- Combining transaction and demographic information for deeper analysis.
 
 ---
 
-## 🔍 Key Findings
+## 🔍 Analysis Performed
 
-- **Karnataka** recorded the highest total transaction volume in the available state-level data, with **2,981,044,533 transactions**.
-- **Ladakh** recorded the highest weighted average transaction value (ATV) among states at **₹3,514.15**.
-- The Pearson correlation between district population density and transaction volume was **0.4188**, indicating a moderate positive relationship.
-- Transaction activity and app opens should be monitored together to understand changes in user engagement and monetization.
-- Regular district-to-state reconciliation can help identify data-quality gaps before reporting.
+### Transaction Analysis
+- State-wise transaction volume analysis.
+- Transaction amount and value trends.
+- Yearly and quarterly transaction patterns.
+- Identification of high-performing states.
+
+### User Analysis
+- Registered user analysis across states.
+- Registered users compared with population.
+- Identification of adoption patterns.
+
+### Device Analysis
+- Analysis of device usage across users.
+- Identification of commonly used device brands.
+
+### Demographic Analysis
+- District-level population analysis.
+- Population density vs transaction volume.
+- Correlation analysis between demographic variables and digital-payment activity.
+
+### Data Quality Analysis
+- State vs district-level reconciliation.
+- Identification of potential data gaps and inconsistencies.
+
+---
+
+## 📊 Key Findings
+
+### 1. Highest Transaction Volume
+Karnataka recorded the highest total transaction volume in the available state-level data:
+
+**2,981,044,533 transactions**
+
+### 2. Highest Weighted Average Transaction Value
+Ladakh recorded the highest weighted average transaction value (ATV):
+
+**₹3,514.15**
+
+### 3. Population Density & Transaction Volume
+The Pearson correlation between district population density and transaction volume was:
+
+**0.4188**
+
+This indicates a moderate positive relationship between population density and transaction activity.
+
+### 4. App Engagement
+App opens can be monitored alongside transaction activity to identify changes in user engagement and potential monetization opportunities.
+
+### 5. Data Reconciliation
+Regular reconciliation between district-level and state-level datasets can help identify data quality gaps and improve reporting accuracy.
 
 ---
 
 ## 💡 Business Recommendations
 
-Based on the analysis:
-
-- Use district-level transaction and population patterns to prioritize digital-payment infrastructure.
-- Use localized campaigns in high-potential markets.
-- Monitor app opens alongside transactions to detect engagement changes early.
-- Regularly reconcile district and state datasets to improve reporting accuracy.
-- Automate reconciliation checks in future reporting pipelines.
-
----
-
-## 🛠️ Tools & Skills Demonstrated
-
-### Python
-
-- Python
-- Pandas
-- NumPy
-
-### Data Analysis
-
-- Data Cleaning
-- Data Transformation
-- Exploratory Data Analysis (EDA)
-- Aggregation
-- GroupBy Analysis
-- Correlation Analysis
-- Data Quality Validation
-- Trend Analysis
-- Comparative Analysis
-
-### Data Visualization
-
-- Matplotlib
-- Seaborn
+- Strengthen digital-payment infrastructure in high-potential regions.
+- Use state and district-level trends to design localized campaigns.
+- Monitor app opens alongside transactions to understand user engagement.
+- Perform regular district-to-state reconciliation to improve data quality.
+- Automate reconciliation and reporting workflows for faster analysis.
 
 ---
 
 ## 📸 Analysis Visualizations
 
-Visualizations from the notebook will be added to this section to provide a quick view of the analytical results.
+### 📊 Transaction Trends
+
+<p align="center">
+  <img src="./screenshots/transaction-trends.png" width="850">
+</p>
+
+<p>State-level transaction analysis highlighting changes in transaction volume and transaction amount over time.</p>
+
+---
+
+### 📈 Population Density vs Transaction Volume
+
+<p align="center">
+  <img src="./screenshots/density-vs-transaction-volume.png" width="850">
+</p>
+
+<p>Correlation analysis examining the relationship between district population density and transaction volume.</p>
+
+---
+
+### 📱 Registered Users to Population Ratio
+
+<p align="center">
+  <img src="./screenshots/registered-users-population-ratio.png" width="850">
+</p>
+
+<p>State-level comparison of registered users relative to population to understand digital-payment adoption patterns.</p>
+
+---
+
+## 🛠️ Tools & Skills
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Correlation Analysis
+- Business Analysis
+
+---
+
+## 📓 Notebook Workflow
+
+The Jupyter Notebook follows an end-to-end analytical workflow:
+
+```text
+Data Loading
+     ↓
+Data Cleaning & Preparation
+     ↓
+Exploratory Data Analysis
+     ↓
+Transaction Analysis
+     ↓
+User & Device Analysis
+     ↓
+Demographic Analysis
+     ↓
+Correlation Analysis
+     ↓
+Visualization
+     ↓
+Business Insights & Recommendations
+```
 
 ---
 
@@ -146,4 +201,10 @@ phonepe-data-analyst-project/
 ├── PhonePe_Data_Analyst_Project.ipynb
 ├── PhonePe_Data.xlsx
 ├── district_name_code_mapping.csv
-└── README.md
+├── README.md
+│
+└── screenshots/
+    ├── transaction-trends.png
+    ├── density-vs-transaction-volume.png
+    └── registered-users-population-ratio.png
+```
