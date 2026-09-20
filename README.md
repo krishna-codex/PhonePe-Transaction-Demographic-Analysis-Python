@@ -278,11 +278,10 @@ This project demonstrates practical skills in:
 * Data Reconciliation
 * Business Insight Generation
 * Translating Data into Actionable Recommendations
-```
-
 ---
-👨‍💻 Author
 
-Krishna Shrivastava
+## 👨‍💻 Author
+
+**Krishna Shrivastava**
 
 Aspiring Data Analyst | Python | SQL | Power BI | Excel
